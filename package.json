@@ -1,0 +1,28 @@
+{
+  "name": "parcel-plugin-go-html",
+  "version": "1.0.0",
+  "description": "Process Go HTML templates through Parcel.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smcstewart/parcel-plugin-go-html.git"
+  },
+  "keywords": [
+    "go",
+    "golang",
+    "template",
+    "html",
+    "parcel",
+    "parceljs"
+  ],
+  "author": "Steven Stewart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smcstewart/parcel-plugin-go-html/issues"
+  },
+  "homepage": "https://github.com/smcstewart/parcel-plugin-go-html#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
