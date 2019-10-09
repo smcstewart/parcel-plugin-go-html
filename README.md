@@ -8,4 +8,4 @@ File extensions are ```.tmpl``` or ```.gohtml``` and both output ```.html``` in 
 
 ## To install
 
-```npm -i parcel-plugin-go-html```
+```npm i parcel-plugin-go-html --save-dev```
