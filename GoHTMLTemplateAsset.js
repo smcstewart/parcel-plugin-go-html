@@ -12,8 +12,8 @@ class GoHTMLTemplateAsset extends HTMLAsset {
   // Go template syntax, but any dependency that contains {{}}.
   processSingleDependency(path, opts) {
     let procPath = path
-    const matchAtStart = /^{{(\.[A-Za-z0-9_.]*)}}/
-    const matchAny = /{{(\.[A-Za-z0-9_.]*)}}/
+    const matchAtStart = /^{{.*}}/
+    const matchAny = /{{.*}}/
 
     if (path.match(matchAtStart)) {
       // Check to see if this is the only instance of Go template syntax.
