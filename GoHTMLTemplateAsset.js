@@ -42,7 +42,7 @@ class GoHTMLTemplateAsset extends HTMLAsset {
   async postProcess(generated) {
     const render = await super.postProcess(generated)
 
-    const finder = /{{(.*)&quot;(.*)&quot;(.*)}}/g;
+    const finder = /{{(.*?)&quot;(.*?)&quot;(.*?)}}/g;
     const replacer = '{{$1"$2"$3}}';
     render[0].value = render[0].value.replace(finder, replacer)
 
