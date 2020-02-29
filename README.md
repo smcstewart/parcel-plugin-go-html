@@ -2,7 +2,7 @@
 
 Process Go HTML templates through Parcel.
 
-Extends [HTMLAsset](https://github.com/parcel-bundler/parcel/blob/master/packages/core/parcel-bundler/src/assets/HTMLAsset.js), but it ignores any dependency that contains Go template syntax (well, actually, anything enclosed in ```{{.}}```) in the following instances:
+Extends [HTMLAsset](https://github.com/parcel-bundler/parcel/blob/master/packages/core/parcel-bundler/src/assets/HTMLAsset.js), but it ignores any dependency that contains Go template syntax (well, actually, anything enclosed in ```{{}}```) in the following instances:
 
 1. When there are multiple instances of Go template syntax (e.g. ```/assets/{{.MyGoVar}}/xyz/{{.YourGoVar}}/abc```); or
 2. When there is a single instance of Go template syntax that does _not_ appear at the beginning of the path (e.g. ```/assets/{{.MyGoVar}}/xyz```).
